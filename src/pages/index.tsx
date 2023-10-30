@@ -1,10 +1,10 @@
 import { Button } from '@/components/ui/button';
 import { Plus } from 'lucide-react';
-import { Inter } from 'next/font/google'
+import { Plus_Jakarta_Sans } from 'next/font/google'
 import { useState } from 'react'
 import Head from 'next/head'
 
-const inter = Inter({ subsets: ['latin'] })
+const plusJakartaSans = Plus_Jakarta_Sans({ subsets: ['latin'] })
 
 export default function Home() {
   const [count, setCount] = useState(0);
@@ -16,7 +16,7 @@ export default function Home() {
         <meta name="description" content="Projeto em React com Next.js e hospedagem na Vercel" />
       </Head>
 
-      <main className={`p-24 text-center ${inter.className}`}>
+      <main className={`p-24 text-center ${plusJakartaSans.className}`}>
         <h1 className="text-3xl font-bold mb-4">{count}</h1>
 
         <Button
